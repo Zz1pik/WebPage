@@ -1,0 +1,207 @@
+#elem1,#elem2,#elem3 {
+	width: 100px;
+	height: 100px;
+}
+
+#elem1 {
+    position: absolute;
+	top: 50px;
+	left: 50px;
+    border: 1px solid red;
+}
+
+#elem2 {
+    position: absolute;
+	top: 180px;
+	left: 180px;
+	border: 1px solid blue;
+}
+
+#elem3 {
+    position: absolute;
+	top: 310px;
+	left: 310px;
+	border: 1px solid green;
+}
+
+#el1 {
+    margin: auto;
+	width: 600px;
+	height: 600px;
+	border: 1px solid green;
+}
+#el2 {
+    position: absolute;
+	left: 720px;
+    top: 100px;
+    
+	width: 200px;
+	height: 200px;
+	border: 1px solid red;
+}
+
+#TrafficLight {
+    position: relative;
+
+    margin: auto;
+    width: 200px;
+    height: 480px;
+    border: 1px solid black;
+}
+
+#redCircle, #yellowCircle, #greenCircle {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+#redCircle {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+
+    background-color: red;
+    border: 1px solid black;
+}
+
+#yellowCircle {
+    position: absolute;
+    top: 190px;
+    left: 50px;
+
+    margin: auto;
+    background-color: yellow;
+    border: 1px solid black;
+}
+
+#greenCircle {
+    position: absolute;
+    top: 320px;
+    left: 50px;
+
+    margin: auto;
+    background-color: green;
+    border: 1px solid black;
+}
+
+#block {
+    width: 400px;
+	border: 1px solid black;
+	text-align: justify;
+}
+
+#img1, #img2, p {
+    padding: 20px;
+}
+
+#img1 {
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+
+#img2 {
+    float: right;
+    width: 100px;
+    height: 100px;
+}
+
+.parent	{
+	display: flex;
+	align-items: center;
+	width: 300px;
+	height: 200px;
+	border: 1px solid red;
+}
+.child {
+	width: 50px;
+	height: 50px;
+	border: 1px solid green;
+}
+.childElem {
+    width: 50px;
+	height: 50px;
+	border: 1px solid green;
+    align-self: flex-start;
+    order: 1;
+}
+
+#parent {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	border: 2px solid #696989;
+	padding: 10px;
+    width: 500px;
+}
+
+#parent > div {
+	padding: 10px;
+	border: 1px solid #696989;
+}
+
+#grid {
+    display: grid;
+    grid-template: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+    gap: 20px;
+	border: 2px solid #696989;
+	padding: 10px;
+    width: 500px;
+	height: 500px;
+}
+
+#grid > div {
+	padding: 10px;
+	border: 1px solid #696989;
+}
+
+#cell1 {
+    grid-row: 1 / 2;
+	grid-column: 1 / 2;
+}
+
+#cell2 {
+    grid-row: 1 / 2;
+	grid-column: 2 / 3;
+}
+
+#cell3 {
+    grid-row: 1 / 2;
+	grid-column: 3 / 4;
+}
+
+#cell4 {
+    grid-row: 2 / 3;
+	grid-column: 1 / 3;
+}
+
+#cell5 {
+    grid-row: 2 / 3;
+	grid-column: 3 / 4;
+}
+
+#cell6 {
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+}
+
+#menu {
+	display: flex;
+}
+
+#menu a {
+	margin-right: 5px;
+	padding: 10px;
+	font: 15px Arial;
+	text-decoration: none;
+	color: #1437AD;
+	border: 1px solid #1437AD;
+	background-color: white;
+}
+
+#menu a:hover, #menu a.active {
+	color: blue;
+	border: 1px solid blue;
+	background-color: #F5F6FA;
+}
